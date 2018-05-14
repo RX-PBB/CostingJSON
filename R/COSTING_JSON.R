@@ -249,7 +249,7 @@ COSTING_JSON_03<-function(data=ModelData(),
 #' @export
 #' @examples
 #' COSTING_JSON_04()
-COSTING_JSON_04<-function(data=ModelData(),
+COSTING_JSON_04<-function(data=ModelData(),CostModelInfo,
                       level1,
                       level2,
                       level3,
@@ -339,9 +339,9 @@ COSTING_JSON_04<-function(data=ModelData(),
           AllSum_JSON[[i]]$children[[j]]<-list()
          
           title<-'Cost Type'
-          if(AllSum_JSON[[i]]$name=='Personnel')(title<-values.setup$CostModelInfo$Obj1NameP)
-          if(AllSum_JSON[[i]]$name=='NonPersonnel')(title<-values.setup$CostModelInfo$Obj1Name)
-          if(AllSum_JSON[[i]]$name=='Revenue')(title<-values.setup$CostModelInfo$Obj1Name)
+          if(AllSum_JSON[[i]]$name=='Personnel')(title<-CostModelInfo$Obj1NameP)
+          if(AllSum_JSON[[i]]$name=='NonPersonnel')(title<-CostModelInfo$Obj1Name)
+          if(AllSum_JSON[[i]]$name=='Revenue')(title<-CostModelInfo$Obj1Name)
           AllSum_JSON[[i]]$children[[j]]$level<-title
           AllSum_JSON[[i]]$children[[j]]$output<-plotoutput[2]
           AllSum_JSON[[i]]$children[[j]]$cost<-cost
@@ -384,9 +384,9 @@ COSTING_JSON_04<-function(data=ModelData(),
                 AllSum_JSON[[i]]$children[[j]]$children[[k]]<-list()
                 
                 
-                if( AllSum_JSON[[i]]$children[[j]]$name=='Personnel')(title<-values.setup$CostModelInfo$Obj2NameP)
-                if( AllSum_JSON[[i]]$children[[j]]$name=='NonPersonnel')(title<-values.setup$CostModelInfo$Obj2Name)
-                if( AllSum_JSON[[i]]$children[[j]]$name=='Revenue')(title<-values.setup$CostModelInfo$Obj2Name)
+                if( AllSum_JSON[[i]]$children[[j]]$name=='Personnel')(title<-CostModelInfo$Obj2NameP)
+                if( AllSum_JSON[[i]]$children[[j]]$name=='NonPersonnel')(title<-CostModelInfo$Obj2Name)
+                if( AllSum_JSON[[i]]$children[[j]]$name=='Revenue')(title<-CostModelInfo$Obj2Name)
                 AllSum_JSON[[i]]$children[[j]]$children[[k]]$level<-title
                 AllSum_JSON[[i]]$children[[j]]$children[[k]]$output<-plotoutput[3]
                 AllSum_JSON[[i]]$children[[j]]$children[[k]]$cost<-cost
@@ -427,9 +427,9 @@ COSTING_JSON_04<-function(data=ModelData(),
                     AllSum_JSON[[i]]$children[[j]]$children[[k]]$children[[l]]<-list()
                     
                     
-                    if( AllSum_JSON[[i]]$children[[j]]$children[[k]]$name=='Personnel')(title<-values.setup$CostModelInfo$Obj2NameP)
-                    if( AllSum_JSON[[i]]$children[[j]]$children[[k]]$name=='NonPersonnel')(title<-values.setup$CostModelInfo$Obj2Name)
-                    if( AllSum_JSON[[i]]$children[[j]]$children[[k]]$name=='Revenue')(title<-values.setup$CostModelInfo$Obj2Name)
+                    if( AllSum_JSON[[i]]$children[[j]]$children[[k]]$name=='Personnel')(title<-CostModelInfo$Obj2NameP)
+                    if( AllSum_JSON[[i]]$children[[j]]$children[[k]]$name=='NonPersonnel')(title<-CostModelInfo$Obj2Name)
+                    if( AllSum_JSON[[i]]$children[[j]]$children[[k]]$name=='Revenue')(title<-CostModelInfo$Obj2Name)
                     AllSum_JSON[[i]]$children[[j]]$children[[k]]$children[[l]]$level<-title
                     AllSum_JSON[[i]]$children[[j]]$children[[k]]$children[[l]]$output<-plotoutput[4]
                     AllSum_JSON[[i]]$children[[j]]$children[[k]]$children[[l]]$cost<-cost
@@ -474,7 +474,7 @@ COSTING_JSON_04<-function(data=ModelData(),
 #' @export
 #' @examples
 #' COSTING_JSON_05()
-COSTING_JSON_05<-function(data=ModelData(),
+COSTING_JSON_05<-function(data=ModelData(),CostModelInfo,
                       level1,
                       level2,
                       level3,
@@ -565,9 +565,9 @@ COSTING_JSON_05<-function(data=ModelData(),
           AllSum_JSON[[i]]$children[[j]]<-list()
          
           title<-'Cost Type'
-          if(AllSum_JSON[[i]]$name=='Personnel')(title<-values.setup$CostModelInfo$Obj1NameP)
-          if(AllSum_JSON[[i]]$name=='NonPersonnel')(title<-values.setup$CostModelInfo$Obj1Name)
-          if(AllSum_JSON[[i]]$name=='Revenue')(title<-values.setup$CostModelInfo$Obj1Name)
+          if(AllSum_JSON[[i]]$name=='Personnel')(title<-CostModelInfo$Obj1NameP)
+          if(AllSum_JSON[[i]]$name=='NonPersonnel')(title<-CostModelInfo$Obj1Name)
+          if(AllSum_JSON[[i]]$name=='Revenue')(title<-CostModelInfo$Obj1Name)
           AllSum_JSON[[i]]$children[[j]]$level<-title
           AllSum_JSON[[i]]$children[[j]]$output<-plotoutput[2]
           AllSum_JSON[[i]]$children[[j]]$cost<-cost
@@ -610,9 +610,9 @@ COSTING_JSON_05<-function(data=ModelData(),
                 AllSum_JSON[[i]]$children[[j]]$children[[k]]<-list()
                 
                 
-                if( AllSum_JSON[[i]]$children[[j]]$name=='Personnel')(title<-values.setup$CostModelInfo$Obj2NameP)
-                if( AllSum_JSON[[i]]$children[[j]]$name=='NonPersonnel')(title<-values.setup$CostModelInfo$Obj2Name)
-                if( AllSum_JSON[[i]]$children[[j]]$name=='Revenue')(title<-values.setup$CostModelInfo$Obj2Name)
+                if( AllSum_JSON[[i]]$children[[j]]$name=='Personnel')(title<-CostModelInfo$Obj2NameP)
+                if( AllSum_JSON[[i]]$children[[j]]$name=='NonPersonnel')(title<-CostModelInfo$Obj2Name)
+                if( AllSum_JSON[[i]]$children[[j]]$name=='Revenue')(title<-CostModelInfo$Obj2Name)
                 AllSum_JSON[[i]]$children[[j]]$children[[k]]$level<-title
                 AllSum_JSON[[i]]$children[[j]]$children[[k]]$output<-plotoutput[3]
                 AllSum_JSON[[i]]$children[[j]]$children[[k]]$cost<-cost
@@ -653,9 +653,9 @@ COSTING_JSON_05<-function(data=ModelData(),
                     AllSum_JSON[[i]]$children[[j]]$children[[k]]$children[[l]]<-list()
                     
                     
-                    if( AllSum_JSON[[i]]$children[[j]]$children[[k]]$name=='Personnel')(title<-values.setup$CostModelInfo$Obj2NameP)
-                    if( AllSum_JSON[[i]]$children[[j]]$children[[k]]$name=='NonPersonnel')(title<-values.setup$CostModelInfo$Obj2Name)
-                    if( AllSum_JSON[[i]]$children[[j]]$children[[k]]$name=='Revenue')(title<-values.setup$CostModelInfo$Obj2Name)
+                    if( AllSum_JSON[[i]]$children[[j]]$children[[k]]$name=='Personnel')(title<-CostModelInfo$Obj2NameP)
+                    if( AllSum_JSON[[i]]$children[[j]]$children[[k]]$name=='NonPersonnel')(title<-CostModelInfo$Obj2Name)
+                    if( AllSum_JSON[[i]]$children[[j]]$children[[k]]$name=='Revenue')(title<-CostModelInfo$Obj2Name)
                     AllSum_JSON[[i]]$children[[j]]$children[[k]]$children[[l]]$level<-title
                     AllSum_JSON[[i]]$children[[j]]$children[[k]]$children[[l]]$output<-plotoutput[4]
                     AllSum_JSON[[i]]$children[[j]]$children[[k]]$children[[l]]$cost<-cost
@@ -696,9 +696,9 @@ COSTING_JSON_05<-function(data=ModelData(),
                         AllSum_JSON[[i]]$children[[j]]$children[[k]]$children[[l]]$children[[m]]<-list()
                         
                         
-                        if( AllSum_JSON[[i]]$children[[j]]$children[[k]]$children[[l]]$name=='Personnel')(title<-values.setup$CostModelInfo$Obj2NameP)
-                        if( AllSum_JSON[[i]]$children[[j]]$children[[k]]$children[[l]]$name=='NonPersonnel')(title<-values.setup$CostModelInfo$Obj2Name)
-                        if( AllSum_JSON[[i]]$children[[j]]$children[[k]]$children[[l]]$name=='Revenue')(title<-values.setup$CostModelInfo$Obj2Name)
+                        if( AllSum_JSON[[i]]$children[[j]]$children[[k]]$children[[l]]$name=='Personnel')(title<-CostModelInfo$Obj2NameP)
+                        if( AllSum_JSON[[i]]$children[[j]]$children[[k]]$children[[l]]$name=='NonPersonnel')(title<-CostModelInfo$Obj2Name)
+                        if( AllSum_JSON[[i]]$children[[j]]$children[[k]]$children[[l]]$name=='Revenue')(title<-CostModelInfo$Obj2Name)
                         AllSum_JSON[[i]]$children[[j]]$children[[k]]$children[[l]]$children[[m]]$level<-title
                         AllSum_JSON[[i]]$children[[j]]$children[[k]]$children[[l]]$children[[m]]$output<-plotoutput[5]
                         AllSum_JSON[[i]]$children[[j]]$children[[k]]$children[[l]]$children[[m]]$cost<-cost
