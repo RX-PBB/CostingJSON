@@ -541,8 +541,8 @@ COSTING_JSON_05<-function(data=ModelData(),CostModelInfo,
     AllSum_JSON[[i]]$children<-list()
     #if(plot.by=='programs')(browser())
     #2nd level
-    if(!is.null(LVL01[[splitby.names[i]]])){
-      if(nrow(LVL01[[splitby.names[i]]])>0){
+    #if(!is.null(LVL01[[splitby.names[i]]])){
+      #if(nrow(LVL01[[splitby.names[i]]])>0){
         LVL02<-split(LVL01[[splitby.names[i]]],LVL01[[splitby.names[i]]][,level2])
         if (level2=='Quartile'){
           n.level2<-6
@@ -719,7 +719,7 @@ COSTING_JSON_05<-function(data=ModelData(),CostModelInfo,
               }#end level 4   
                 
           } #end level 3
-        }}}
+        }#}}
   }
   
   
